@@ -61,11 +61,11 @@ const Footer = () => {
               </button>
               
               <button
-                onClick={() => window.open('https://instagram.com/corujaCortes', '_blank')}
+                onClick={() => window.open('https://instagram.com/coruja.corte', '_blank')}
                 className="flex items-center justify-center md:justify-end space-x-2 text-white/70 hover:text-royal-blue transition-colors duration-300 w-full"
               >
                 <Instagram className="w-4 h-4" />
-                <span>@corujaCortes</span>
+                <span>@coruja.cortes</span>
               </button>
             </div>
           </div>
@@ -75,11 +75,14 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="text-center">
             <p className="font-display text-2xl md:text-3xl font-black text-white mb-2">
-              "SE NÃO CONHECE,
-              <span className="text-royal-blue"> JÁ OUVIU FALAR."</span>
+              SE NÃO CONHECE,
+              <span className="text-royal-blue"> JÁ OUVIU FALAR.</span>
             </p>
             <p className="text-white/60 text-sm">
               © 2025 Coruja Cortes - Todos os direitos reservados
+            </p>
+            <p className="text-white/40 text-xs mt-2">
+              Desenvolvido por <span className="font-bold text-royal-blue">CODEXY</span>
             </p>
           </div>
         </div>
