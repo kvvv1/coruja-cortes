@@ -82,7 +82,7 @@ const Footer = () => {
               © 2025 Coruja Cortes - Todos os direitos reservados
             </p>
             <p className="text-white/40 text-xs mt-2">
-              Desenvolvido por <span className="font-bold text-royal-blue">CODEXY</span>
+              Desenvolvido por <span className="font-bold">CODE<span className="text-royal-blue">X</span>Y</span>
             </p>
           </div>
         </div>
