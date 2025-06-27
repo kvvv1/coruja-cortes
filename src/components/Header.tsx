@@ -40,7 +40,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-16 h-16 flex items-center justify-center animate-glow">
-              <img src="/public/logo-coruja.png" alt="Logo Coruja Cortes" className="w-16 h-16 object-contain" />
+              <img src="/logo-coruja.png" alt="Logo Coruja Cortes" className="w-16 h-16 object-contain" />
             </div>
             <span className="text-white font-display text-xl font-bold">
               CORUJA CORTES

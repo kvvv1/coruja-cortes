@@ -4,32 +4,32 @@ import { Star, Instagram } from 'lucide-react';
 const Gallery = () => {
   const cuts = [
     {
-      image: '/public/corte1.png',
+      image: '/corte1.png',
       label: 'MOICANO COLORIDO',
       style: 'Moicano moderno com coloração vermelha vibrante e acabamento na régua.'
     },
     {
-      image: '/public/corte2.png',
+      image: '/corte2.png',
       label: 'FAVELINHA',
       style: 'Desenho artístico de casas na nuca, representando a quebrada.'
     },
     {
-      image: '/public/corte3.png',
+      image: '/corte3.png',
       label: 'TESOURA NA LATERAL',
       style: 'Corte com desenho de tesoura na lateral, mostrando criatividade e precisão.'
     },
     {
-      image: '/public/corte4.png',
+      image: '/corte4.png',
       label: 'PLATINADO MASCULINO',
       style: 'Corte masculino platinado, com acabamento degradê e estilo marcante.'
     },
     {
-      image: '/public/corte5.png',
+      image: '/corte5.png',
       label: 'PLATINADO INFANTIL',
       style: 'Corte platinado para crianças, estilo ousado e moderno.'
     },
     {
-      image: '/public/corte6.png',
+      image: '/corte6.png',
       label: 'DESIGN AUTORAL',
       style: 'Corte com design exclusivo, mostrando técnica e personalidade.'
     }

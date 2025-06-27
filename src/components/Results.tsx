@@ -43,7 +43,7 @@ const Results = () => {
           {[1,2,3,4,5,6,7,8,9].map((num) => (
             <div key={num} className="overflow-hidden rounded-xl bg-gradient-to-b from-royal-blue/10 to-black shadow-lg">
               <img 
-                src={`/public/curso${num}.png`}
+                src={`/curso${num}.png`}
                 alt={`Aluno formado ${num}`}
                 className="w-full h-96 object-cover object-center"
               />

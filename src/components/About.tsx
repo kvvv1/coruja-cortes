@@ -54,7 +54,7 @@ const About = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden">
               <img 
-                src="/public/corte2.png"
+                src="/corte2.png"
                 alt="Corte de cabelo profissional Coruja Cortes"
                 className="w-full h-96 object-cover"
               />
