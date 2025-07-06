@@ -95,7 +95,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold text-white mb-2">REDES SOCIAIS</h3>
                   <button 
-                    onClick={() => window.open('https://instagram.com/coruja.corte', '_blank')}
+                    onClick={() => window.open('https://www.instagram.com/coruja.cortes/', '_blank')}
                     className="text-royal-blue hover:text-blue-400 transition-colors duration-300"
                   >
                     @coruja.corte
@@ -139,7 +139,7 @@ const Contact = () => {
 
         {/* Final CTA */}
         <div className="mt-16 text-center bg-gradient-to-r from-royal-blue/20 via-silver/10 to-royal-blue/20 p-8 rounded-2xl border border-royal-blue/30">
-          <h3 className="font-display text-2xl md:text-4xl font-black text-white mb-4">
+          <h3 c-lassName="font-display text-2xl md:text-4xl font-black text-white mb-4">
             "TÁ ESPERANDO O QUÊ?"
           </h3>
           <p className="text-lg text-white/80 mb-6">

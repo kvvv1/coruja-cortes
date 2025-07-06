@@ -159,7 +159,7 @@ const Gallery = () => {
               </p>
             </div>
             <button 
-              onClick={() => window.open('https://www.instagram.com/coruja.corte/', '_blank')}
+              onClick={() => window.open('https://www.instagram.com/coruja.cortes/', '_blank')}
               className="bg-royal-blue hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 hover:scale-105"
             >
               SEGUIR

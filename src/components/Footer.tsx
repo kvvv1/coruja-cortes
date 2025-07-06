@@ -62,7 +62,7 @@ const Footer = () => {
               </button>
               
               <button
-                onClick={() => window.open('https://instagram.com/coruja.corte', '_blank')}
+                onClick={() => window.open('https://www.instagram.com/coruja.cortes/', '_blank')}
                 className="flex items-center justify-center md:justify-end space-x-2 text-white/70 hover:text-royal-blue transition-colors duration-300 w-full"
               >
                 <Instagram className="w-4 h-4" />

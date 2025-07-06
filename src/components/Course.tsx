@@ -90,7 +90,7 @@ const Course = () => {
         {/* Galeria de Fotos do Curso */}
         <div className="mb-16">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            {['/curso10.jpeg','/curso11.jpeg','/curso12.jpeg','/curso13.jpeg','/curso14.jpeg'].map((src, idx) => (
+            {['/curso9.png','/curso10.jpeg','/curso11.jpeg','/curso12.jpeg','/curso13.jpeg','/curso14.jpeg'].map((src, idx) => (
               <div key={src} className="rounded-xl overflow-hidden shadow-lg bg-black">
                 <img
                   src={src}
