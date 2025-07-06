@@ -79,9 +79,9 @@ const Gallery = () => {
       style: 'Platinado espetado com muito estilo, corte de cria.'
     },
     {
-      image: '/corte17.jpeg',
-      label: 'BARBA E CABELO',
-      style: 'Combo de corte e barba para um visual completo.'
+      image: '/corte16.jpeg',
+      label: 'PLATINADO DA MELHOR FORMA',
+      style: 'Platinado com acabamento de alto padrão, visual marcante.'
     }
   ];
 
