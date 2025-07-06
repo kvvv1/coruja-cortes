@@ -40,8 +40,8 @@ const Gallery = () => {
     },
     {
       image: '/corte8.jpeg',
-      label: 'MOICANO FREESTYLE',
-      style: 'Corte infantil'
+      label: 'CORTE SOCIAL INFANTIL',
+      style: 'Corte infantil social, clássico e estiloso.'
     },
     {
       image: '/corte9.jpeg',

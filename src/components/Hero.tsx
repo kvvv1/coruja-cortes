@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scissors, BookOpen, ArrowRight, Gift } from 'lucide-react';
+import { Scissors, BookOpen, ArrowRight, Gift, Shirt } from 'lucide-react';
 
 const Hero = () => {
   const handleCTAClick = (type: string) => {
@@ -61,29 +61,37 @@ const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col gap-4 items-center w-full animate-slide-up sm:flex-row sm:justify-center" style={{animationDelay: '0.6s'}}>
+            <div className="flex flex-col gap-3 items-center w-full animate-slide-up sm:flex-row sm:justify-center sm:gap-5 md:gap-6 lg:gap-8" style={{animationDelay: '0.6s'}}>
               <button
                 onClick={() => handleCTAClick('cut')}
-                className="group bg-royal-blue hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-2xl w-full sm:w-auto"
+                className="group bg-royal-blue hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-base md:text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-2xl w-full sm:w-auto min-w-[210px]"
               >
                 <Scissors className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-                <span>QUERO DEIXAR NA RÉGUA</span>
+                <span>CORTAR CABELO</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
               <button
                 onClick={() => handleCTAClick('course')}
-                className="group bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 w-full sm:w-auto"
+                className="group bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-bold py-3 px-6 rounded-lg text-base md:text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 w-full sm:w-auto min-w-[210px]"
               >
                 <BookOpen className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                <span>QUERO FAZER O CURSO</span>
+                <span>FAZER CURSO</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
               <button
                 onClick={() => handleCTAClick('rifa')}
-                className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-2xl w-full sm:w-auto"
+                className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 px-6 rounded-lg text-base md:text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-2xl w-full sm:w-auto min-w-[210px]"
               >
                 <Gift className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                <span>PARTICIPE DA RIFA DO CORUJA</span>
+                <span>RIFA DO CORUJA</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </button>
+              <button
+                onClick={() => window.open('https://wa.me/5531999368220?text=Quero%20comprar%20roupas%20do%20Coruja!', '_blank')}
+                className="group bg-gradient-to-r from-red-600 to-red-400 hover:from-red-700 hover:to-red-500 text-white font-bold py-3 px-6 rounded-lg text-base md:text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-2xl w-full sm:w-auto min-w-[210px]"
+              >
+                <Shirt className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
+                <span>COMPRAR ROUPAS</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
             </div>
