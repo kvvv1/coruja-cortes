@@ -4,12 +4,12 @@ import { Phone, MapPin, Clock, Instagram, ArrowRight } from 'lucide-react';
 const Contact = () => {
   const handleWhatsApp = (type: string) => {
     const messages = {
-      cut: 'Olá! Quero agendar um horário para cortar na Coruja Cortes!',
-      course: 'Olá! Quero tirar dúvidas sobre o curso de barbeiro da Coruja Cortes!'
+      cut: 'Olá! Quero agendar um horário para cortar no Coruja Cortes!',
+      course: 'Olá! Quero tirar dúvidas sobre o curso de barbeiro do Coruja Cortes!'
     };
     
     const message = messages[type as keyof typeof messages];
-    window.open(`https://wa.me/5531999999999?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/5531999368220?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
@@ -63,11 +63,18 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 text-royal-blue flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-bold text-white mb-2">LOCALIZAÇÃO</h3>
-                  <p className="text-white/80">
-                    Rua Principal, 123 - Centro
-                    <br />
-                    Sabará - MG, 34505-000
-                  </p>
+                  <div className="text-white/80 space-y-2">
+                    <div>
+                      <p className="font-semibold text-royal-blue">Unidade 1</p>
+                      <p>Praça Antônio de Albuquerque, 58</p>
+                      <p>Centro de Sabará - MG</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-royal-blue">Unidade 2</p>
+                      <p>Rua José Vaz Pedrosa, 111</p>
+                      <p>Pompéu - MG</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -88,10 +95,10 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold text-white mb-2">REDES SOCIAIS</h3>
                   <button 
-                    onClick={() => window.open('https://instagram.com/corujaCortes', '_blank')}
+                    onClick={() => window.open('https://instagram.com/coruja.corte', '_blank')}
                     className="text-royal-blue hover:text-blue-400 transition-colors duration-300"
                   >
-                    @corujaCortes
+                    @coruja.corte
                   </button>
                 </div>
               </div>
@@ -108,14 +115,22 @@ const Contact = () => {
                     CORUJA CORTES
                   </h3>
                   <p className="text-white/80 mb-4">
-                    Sabará - MG
+                    Sabará e Pompéu - MG
                   </p>
-                  <button 
-                    onClick={() => window.open('https://maps.google.com/?q=Sabará,MG', '_blank')}
-                    className="bg-royal-blue hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 hover:scale-105"
-                  >
-                    VER NO MAPA
-                  </button>
+                  <div className="space-y-2">
+                    <button 
+                      onClick={() => window.open('https://maps.google.com/?q=Praça+Antônio+de+Albuquerque+58+Sabará+MG', '_blank')}
+                      className="bg-royal-blue hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 hover:scale-105 text-sm"
+                    >
+                      UNIDADE 1 - SABARÁ
+                    </button>
+                    <button 
+                      onClick={() => window.open('https://maps.google.com/?q=Rua+José+Vaz+Pedrosa+111+Pompéu+MG', '_blank')}
+                      className="bg-royal-blue hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 hover:scale-105 text-sm"
+                    >
+                      UNIDADE 2 - POMPÉU
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

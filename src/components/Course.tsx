@@ -34,7 +34,7 @@ const Course = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = `Olá! Quero saber mais sobre o curso de barbeiro.\n\nNome: ${formData.name}\nTelefone: ${formData.phone}\nCidade: ${formData.city}`;
-    window.open(`https://wa.me/5531999999999?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/5531999368220?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
@@ -85,6 +85,22 @@ const Course = () => {
           <p className="text-lg text-white/90">
             Alguns estão no estilo. <strong className="text-royal-blue">Outros já estão no jogo.</strong>
           </p>
+        </div>
+
+        {/* Galeria de Fotos do Curso */}
+        <div className="mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            {['/curso10.jpeg','/curso11.jpeg','/curso12.jpeg','/curso13.jpeg','/curso14.jpeg'].map((src, idx) => (
+              <div key={src} className="rounded-xl overflow-hidden shadow-lg bg-black">
+                <img
+                  src={src}
+                  alt={`Foto do curso ${idx+10}`}
+                  className="w-full h-40 md:h-44 object-cover hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Registration Form */}

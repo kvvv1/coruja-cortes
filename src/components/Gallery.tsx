@@ -15,8 +15,8 @@ const Gallery = () => {
     },
     {
       image: '/corte3.png',
-      label: 'TESOURA NA LATERAL',
-      style: 'Corte com desenho de tesoura na lateral, mostrando criatividade e precisão.'
+      label: 'CORTE MOICANO DEGRADÊ MODERNO',
+      style: 'Corte moicano degradê moderno, com freestyle na lateral'
     },
     {
       image: '/corte4.png',
@@ -32,6 +32,56 @@ const Gallery = () => {
       image: '/corte6.png',
       label: 'DESIGN AUTORAL',
       style: 'Corte com design exclusivo, mostrando técnica e personalidade.'
+    },
+    {
+      image: '/corte7.jpeg',
+      label: 'MOICANO PIGMENTADO VERMELHO COM FREESTYLE',
+      style: 'Moicano pigmentado vermelho, com desenhos freestyle na lateral.'
+    },
+    {
+      image: '/corte8.jpeg',
+      label: 'MOICANO FREESTYLE',
+      style: 'Corte infantil'
+    },
+    {
+      image: '/corte9.jpeg',
+      label: 'DEGRADÊ CLÁSSICO',
+      style: 'Corte degradê tradicional, perfeito para qualquer ocasião.'
+    },
+    {
+      image: '/corte10.jpeg',
+      label: 'MOICANO MODERNO',
+      style: 'Moicano estiloso com acabamento impecável.'
+    },
+    {
+      image: '/corte11.jpeg',
+      label: 'DESENHO ARTÍSTICO',
+      style: 'Corte com desenho freestyle, cheio de personalidade.'
+    },
+    {
+      image: '/corte12.jpeg',
+      label: 'CORTE SOCIAL',
+      style: 'Corte social, elegante e versátil para o dia a dia.'
+    },
+    {
+      image: '/corte13.jpeg',
+      label: 'PLATINADO CURTO',
+      style: 'Platinado curto daquele naipe, moderno e prático.'
+    },
+    {
+      image: '/corte14.jpeg',
+      label: 'PLATINADO OUSADO',
+      style: 'Corte platinado para quem gosta de inovar no visual.'
+    },
+    {
+      image: '/corte15.jpeg',
+      label: 'PLATINADO DE CRIA ESPETADO',
+      style: 'Platinado espetado com muito estilo, corte de cria.'
+    },
+    {
+      image: '/corte17.jpeg',
+      label: 'BARBA E CABELO',
+      style: 'Combo de corte e barba para um visual completo.'
     }
   ];
 
@@ -52,8 +102,8 @@ const Gallery = () => {
           </p>
           
           <div className="flex items-center justify-center space-x-2 text-white/80">
-            <Instagram className="w-5 h-5" />
-            <span>@corujaCortes - Siga para ver mais</span>
+                            <Instagram className="w-5 h-5" />
+                <span>@coruja.corte - Siga para ver mais</span>
           </div>
         </div>
 

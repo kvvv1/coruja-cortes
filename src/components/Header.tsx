@@ -18,6 +18,7 @@ const Header = () => {
     { label: 'SOBRE', href: '#about' },
     { label: 'CURSO', href: '#course' },
     { label: 'GALERIA', href: '#gallery' },
+    { label: 'RIFAS', href: '#rifa' },
     { label: 'CONTATO', href: '#contact' },
   ];
 

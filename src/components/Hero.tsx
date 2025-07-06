@@ -1,12 +1,15 @@
 import React from 'react';
-import { Scissors, BookOpen, ArrowRight } from 'lucide-react';
+import { Scissors, BookOpen, ArrowRight, Gift } from 'lucide-react';
 
 const Hero = () => {
   const handleCTAClick = (type: string) => {
     if (type === 'cut') {
-      window.open('https://wa.me/5531999999999?text=Quero agendar um corte na Coruja Cortes!', '_blank');
+      window.open('https://wa.me/5531999368220?text=Quero agendar um corte no Coruja Cortes!', '_blank');
     } else if (type === 'course') {
       const element = document.querySelector('#course');
+      element?.scrollIntoView({ behavior: 'smooth' });
+    } else if (type === 'rifa') {
+      const element = document.querySelector('#rifa');
       element?.scrollIntoView({ behavior: 'smooth' });
     }
   };
@@ -51,29 +54,36 @@ const Hero = () => {
             {/* Subtitle */}
             <div className="mb-12 animate-fade-in" style={{animationDelay: '0.3s'}}>
               <p className="text-white/90 text-lg md:text-xl max-w-3xl leading-relaxed">
-                Seja pra fazer o <strong className="text-royal-blue">um corte de qualidade</strong> ou 
+                Seja pra fazer um corte de qualidade ou 
                 aprender a <strong className="text-silver">ganhar dinheiro com a máquina na mão</strong>,
-                a Coruja Cortes é o ponto certo.
+                o Coruja Cortes é o ponto certo.
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{animationDelay: '0.6s'}}>
+            <div className="flex flex-col gap-4 items-center w-full animate-slide-up sm:flex-row sm:justify-center" style={{animationDelay: '0.6s'}}>
               <button
                 onClick={() => handleCTAClick('cut')}
-                className="group bg-royal-blue hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-2xl"
+                className="group bg-royal-blue hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-2xl w-full sm:w-auto"
               >
                 <Scissors className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                 <span>QUERO DEIXAR NA RÉGUA</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
-              
               <button
                 onClick={() => handleCTAClick('course')}
-                className="group bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105"
+                className="group bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 w-full sm:w-auto"
               >
                 <BookOpen className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                 <span>QUERO FAZER O CURSO</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </button>
+              <button
+                onClick={() => handleCTAClick('rifa')}
+                className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-2xl w-full sm:w-auto"
+              >
+                <Gift className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                <span>PARTICIPE DA RIFA DO CORUJA</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
             </div>

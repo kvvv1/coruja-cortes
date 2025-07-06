@@ -12,7 +12,7 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h2 className="font-display text-4xl md:text-5xl font-black text-white mb-6">
-                SOBRE A
+                SOBRE O
                 <br />
                 <span className="text-royal-blue">CORUJA CORTES</span>
               </h2>
@@ -30,7 +30,7 @@ const About = () => {
                 </p>
                 
                 <p>
-                  Na Coruja Cortes, cada cliente sai com mais que um corte - sai com 
+                  No Coruja Cortes, cada cliente sai com mais que um corte - sai com 
                   <strong className="text-royal-blue"> atitude</strong>. E cada aluno formado 
                   leva mais que técnica - leva o <strong className="text-silver">corre na veia</strong>.
                 </p>

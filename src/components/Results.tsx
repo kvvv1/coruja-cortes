@@ -6,7 +6,7 @@ const Results = () => {
     {
       name: 'LUCAS SILVA',
       role: 'Aluno formado - 2023',
-      content: 'Saí do zero e hoje tô faturando R$4.500 por mês só com corte. A Coruja me ensinou não só a técnica, mas o corre todo.',
+      content: 'Saí do zero e hoje tô faturando R$4.500 por mês só com corte. O Coruja me ensinou não só a técnica, mas o corre todo.',
       rating: 5
     },
     {
@@ -18,7 +18,7 @@ const Results = () => {
     {
       name: 'DIEGO MARTINS',
       role: 'Aluno formado - 2022',
-      content: 'Hoje tenho minha própria barbearia e dois funcionários. Tudo começou com o curso da Coruja.',
+      content: 'Hoje tenho minha própria barbearia e dois funcionários. Tudo começou com o curso do Coruja.',
       rating: 5
     }
   ];
@@ -40,11 +40,14 @@ const Results = () => {
 
         {/* Galeria dos alunos formados */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {[1,2,3,4,5,6,7,8,9].map((num) => (
-            <div key={num} className="overflow-hidden rounded-xl bg-gradient-to-b from-royal-blue/10 to-black shadow-lg">
+          {[
+            ...[1,2,3,4,5,6,7,8,9].map((num) => `/curso${num}.png`),
+            '/curso10.jpeg','/curso11.jpeg','/curso12.jpeg','/curso13.jpeg','/curso14.jpeg'
+          ].map((src, idx) => (
+            <div key={src} className="overflow-hidden rounded-xl bg-gradient-to-b from-royal-blue/10 to-black shadow-lg">
               <img 
-                src={`/curso${num}.png`}
-                alt={`Aluno formado ${num}`}
+                src={src}
+                alt={`Aluno formado ${idx+1}`}
                 className="w-full h-96 object-cover object-center"
               />
             </div>

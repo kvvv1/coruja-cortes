@@ -19,7 +19,7 @@ const Footer = () => {
             <p className="text-white/80 text-sm leading-relaxed">
               Barbearia e Escola de Barbeiros
               <br />
-              Sabará - MG
+              Sabará e Pompéu - MG
             </p>
           </div>
 
@@ -32,6 +32,7 @@ const Footer = () => {
                 { label: 'Sobre', href: '#about' },
                 { label: 'Curso', href: '#course' },
                 { label: 'Galeria', href: '#gallery' },
+                { label: 'Rifas', href: '#rifa' },
                 { label: 'Contato', href: '#contact' },
               ].map((link) => (
                 <button
@@ -53,11 +54,11 @@ const Footer = () => {
             <h3 className="font-display font-bold text-white mb-4">CONTATO</h3>
             <div className="space-y-3">
               <button
-                onClick={() => window.open('https://wa.me/5531999999999', '_blank')}
+                onClick={() => window.open('https://wa.me/5531999368220', '_blank')}
                 className="flex items-center justify-center md:justify-end space-x-2 text-white/70 hover:text-green-400 transition-colors duration-300 w-full"
               >
                 <Phone className="w-4 h-4" />
-                <span>(31) 99999-9999</span>
+                <span>(31) 99936-8220</span>
               </button>
               
               <button
@@ -65,7 +66,7 @@ const Footer = () => {
                 className="flex items-center justify-center md:justify-end space-x-2 text-white/70 hover:text-royal-blue transition-colors duration-300 w-full"
               >
                 <Instagram className="w-4 h-4" />
-                <span>@coruja.cortes</span>
+                <span>@coruja.corte</span>
               </button>
             </div>
           </div>
