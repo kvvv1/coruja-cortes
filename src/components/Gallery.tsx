@@ -14,44 +14,46 @@ const Gallery = () => {
       style: 'Desenho artístico de casas na nuca, representando a quebrada.'
     },
     {
-      image: '/corte3.png',
-      label: 'CORTE MOICANO DEGRADÊ MODERNO',
-      style: 'Corte moicano degradê moderno, com freestyle na lateral'
+      image: '/corte7.jpeg',
+      label: 'MOICANO PIGMENTADO VERMELHO COM FREESTYLE',
+      style: 'Moicano pigmentado vermelho, com desenhos freestyle na lateral.'
     },
+   
     {
       image: '/corte4.png',
       label: 'PLATINADO MASCULINO',
       style: 'Corte masculino platinado, com acabamento degradê e estilo marcante.'
     },
     {
-      image: '/corte5.png',
-      label: 'PLATINADO INFANTIL',
-      style: 'Corte platinado para crianças, estilo ousado e moderno.'
-    },
-    {
-      image: '/corte6.png',
+      image: '/corte5.png', 
       label: 'DESIGN AUTORAL',
       style: 'Corte com design exclusivo, mostrando técnica e personalidade.'
     },
     {
-      image: '/corte7.jpeg',
-      label: 'MOICANO PIGMENTADO VERMELHO COM FREESTYLE',
-      style: 'Moicano pigmentado vermelho, com desenhos freestyle na lateral.'
+      image: '/corte6.png',
+      label: 'PLATINADO INFANTIL',
+      style: 'Corte platinado para crianças, estilo ousado e moderno.'
+    },
+
+    {
+      image: '/corte3.png',
+      label: 'CORTE MOICANO DEGRADÊ MODERNO',
+      style: 'Corte moicano degradê moderno, com freestyle na lateral'
     },
     {
       image: '/corte8.jpeg',
       label: 'CORTE SOCIAL INFANTIL',
-      style: 'Corte infantil social, clássico e estiloso.'
+      style: 'Cortes infantis totalmente na tesoura.'
     },
     {
       image: '/corte9.jpeg',
-      label: 'DEGRADÊ CLÁSSICO',
-      style: 'Corte degradê tradicional, perfeito para qualquer ocasião.'
+      label: 'DEGRADÊ CLÁSSICO COLORIDO',
+      style: 'Corte degradê colorido.'
     },
     {
       image: '/corte10.jpeg',
-      label: 'MOICANO MODERNO',
-      style: 'Moicano estiloso com acabamento impecável.'
+      label: 'DEGRADÊ CLÁSSICO CURTO',
+      style: 'Degradê clássico com risquinho na lateral.'
     },
     {
       image: '/corte11.jpeg',
@@ -60,19 +62,15 @@ const Gallery = () => {
     },
     {
       image: '/corte12.jpeg',
-      label: 'CORTE SOCIAL',
-      style: 'Corte social, elegante e versátil para o dia a dia.'
+      label: 'CORTE COLORIDO COM FREESTYLE',
+      style: ' '
     },
     {
       image: '/corte13.jpeg',
       label: 'PLATINADO CURTO',
       style: 'Platinado curto daquele naipe, moderno e prático.'
     },
-    {
-      image: '/corte14.jpeg',
-      label: 'PLATINADO OUSADO',
-      style: 'Corte platinado para quem gosta de inovar no visual.'
-    },
+    
     {
       image: '/corte15.jpeg',
       label: 'PLATINADO DE CRIA ESPETADO',

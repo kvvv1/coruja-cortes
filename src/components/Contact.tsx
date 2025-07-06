@@ -134,18 +134,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
-            {/* Floating contact card */}
-            <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-royal-blue to-blue-600 p-4 rounded-xl border-2 border-white/20 shadow-2xl">
-              <div className="text-center">
-                <Phone className="w-8 h-8 text-white mx-auto mb-2" />
-                <p className="text-white font-bold text-sm">
-                  RESPOSTA EM
-                  <br />
-                  ATÉ 30 MIN
-                </p>
-              </div>
-            </div>
           </div>
         </div>
 

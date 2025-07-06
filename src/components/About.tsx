@@ -40,7 +40,7 @@ const About = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-black text-royal-blue mb-2">5+</div>
+                <div className="text-3xl font-black text-royal-blue mb-2">8+</div>
                 <div className="text-white/80 font-bold">ANOS DE EXPERIÊNCIA</div>
               </div>
               <div className="text-center">
@@ -54,7 +54,7 @@ const About = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden">
               <img 
-                src="/corte2.png"
+                src="/corte16.jpeg"
                 alt="Corte de cabelo profissional Coruja Cortes"
                 className="w-full h-96 object-cover"
               />
