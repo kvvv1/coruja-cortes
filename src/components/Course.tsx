@@ -44,7 +44,7 @@ const Course = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-6xl font-black text-white mb-6">
+          <h2 className="font-display text-4xl md:text-6xl font-black text-white mb-6" style={{letterSpacing: '0.03em'}}>
             CURSO DE BARBEIRO
             <br />
             <span className="text-royal-blue">PROFISSIONAL</span>
@@ -64,7 +64,7 @@ const Course = () => {
               <div className="bg-royal-blue w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                 <highlight.icon className="w-6 h-6 text-white" />
               </div>
-              <h3 className="font-display font-bold text-white mb-3 text-lg">{highlight.title}</h3>
+              <h3 className="font-display font-bold text-white mb-3 text-lg" style={{letterSpacing: '0.05em'}}>{highlight.title}</h3>
               <p className="text-white/80 text-sm leading-relaxed">{highlight.desc}</p>
             </div>
           ))}

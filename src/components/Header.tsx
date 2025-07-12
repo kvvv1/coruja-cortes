@@ -37,13 +37,13 @@ const Header = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className={`flex justify-between items-center ${isScrolled ? 'py-1' : 'py-4'}`}>
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-16 h-16 flex items-center justify-center animate-glow">
-              <img src="/logo-coruja.png" alt="Logo Coruja Cortes" className="w-16 h-16 object-contain" />
+            <div className="w-28 h-28 flex items-center justify-center">
+              <img src="/logo-coruja.png" alt="Logo Coruja Cortes" className="w-28 h-28 object-contain" />
             </div>
-            <span className="text-white font-display text-xl font-bold">
+            <span className="text-white font-display text-3xl md:text-4xl font-black tracking-wider" style={{fontFamily: 'Impact, Arial Black, sans-serif', textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
               CORUJA CORTES
             </span>
           </div>
