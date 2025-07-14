@@ -106,8 +106,8 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {cuts.map((cut, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {cuts.slice(0, 8).map((cut, index) => (
             <div 
               key={cut.label}
               className="group relative overflow-hidden rounded-xl bg-gradient-to-b from-transparent to-black cursor-pointer"

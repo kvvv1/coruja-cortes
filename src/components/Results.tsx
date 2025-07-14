@@ -39,10 +39,9 @@ const Results = () => {
         </div>
 
         {/* Galeria dos alunos formados */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {[
-            ...[1,2,3,4,5,6,7,8,9].map((num) => `/curso${num}.png`),
-            '/curso10.jpeg','/curso11.jpeg','/curso12.jpeg','/curso13.jpeg','/curso14.jpeg'
+            ...[1,2,3,4,5,6,7,8].map((num) => `/curso${num}.png`)
           ].map((src, idx) => (
             <div key={src} className="overflow-hidden rounded-xl bg-gradient-to-b from-royal-blue/10 to-black shadow-lg">
               <img 

@@ -88,20 +88,6 @@ const Course = () => {
         </div>
 
         {/* Galeria de Fotos do Curso */}
-        <div className="mb-16">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            {['/curso9.png','/curso10.jpeg','/curso11.jpeg','/curso12.jpeg','/curso13.jpeg','/curso14.jpeg'].map((src, idx) => (
-              <div key={src} className="rounded-xl overflow-hidden shadow-lg bg-black">
-                <img
-                  src={src}
-                  alt={`Foto do curso ${idx+10}`}
-                  className="w-full h-40 md:h-44 object-cover hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Registration Form */}
         <div className="max-w-2xl mx-auto">
