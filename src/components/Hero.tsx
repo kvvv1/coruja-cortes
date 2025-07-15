@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-center bg-cover bg-no-repeat"
+      className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-cover bg-no-repeat bg-center md:bg-[position:right]"
       style={{ backgroundImage: "url('/herosection1.png')" }}
     >
       {/* Overlay para contraste */}
@@ -37,6 +37,15 @@ const Hero = () => {
                 <br />
                 <span className="text-white">OU EMPREENDENDO.</span>
               </h2>
+              {/* NOVO TEXTO DE DESTAQUE */}
+              <div className="mt-8">
+                <h3 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-royal-blue drop-shadow mb-2 uppercase tracking-tight">
+                  TÁ ESPERANDO O QUÊ?
+                </h3>
+                <p className="font-sans text-lg md:text-xl text-white/90 font-medium">
+                  Aqui tem corte, curso e corre pra quem quer.
+                </p>
+              </div>
             </div>
             <div className="mb-12 animate-fade-in" style={{animationDelay: '0.3s'}}>
               <p className="text-white/90 text-lg md:text-xl max-w-3xl leading-relaxed">
