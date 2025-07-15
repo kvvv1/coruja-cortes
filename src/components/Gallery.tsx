@@ -47,11 +47,6 @@ const Gallery = () => {
 
   const graduates = [
     {
-      image: '/curso1.png',
-      label: 'FORMADO 1',
-      style: 'Aluno formado com técnica avançada.'
-    },
-    {
       image: '/curso2.png',
       label: 'FORMADO 2',
       style: 'Aluno formado com domínio completo.'
@@ -67,24 +62,29 @@ const Gallery = () => {
       style: 'Aluno formado com qualidade superior.'
     },
     {
-      image: '/curso5.png',
-      label: 'FORMADO 5',
-      style: 'Aluno formado com destaque.'
-    },
-    {
-      image: '/curso6.png',
-      label: 'FORMADO 6',
-      style: 'Aluno formado com sucesso.'
-    },
-    {
-      image: '/curso7.png',
-      label: 'FORMADO 7',
-      style: 'Aluno formado com maestria.'
-    },
-    {
       image: '/curso8.png',
       label: 'FORMADO 8',
       style: 'Aluno formado com profissionalismo.'
+    },
+    {
+      image: '/curso10.jpeg',
+      label: 'FORMADO 10',
+      style: 'Aluno formado com destaque.'
+    },
+    {
+      image: '/curso12.jpeg',
+      label: 'FORMADO 12',
+      style: 'Aluno formado com sucesso.'
+    },
+    {
+      image: '/curso14.jpeg',
+      label: 'FORMADO 14',
+      style: 'Aluno formado com maestria.'
+    },
+    {
+      image: '/curso9.png',
+      label: 'FORMADO 9',
+      style: 'Aluno formado com técnica avançada.'
     }
   ];
 
@@ -92,7 +92,7 @@ const Gallery = () => {
     <section id="gallery" className="py-20 bg-gradient-to-b from-black to-graphite relative">
       <div className="absolute inset-0 bg-concrete opacity-5"></div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-6xl font-black text-white mb-6">
