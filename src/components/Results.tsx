@@ -28,31 +28,6 @@ const Results = () => {
       <div className="absolute inset-0 bg-brick-texture opacity-5"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-6xl font-black text-white mb-6">
-            GALERIA DE FORMANDOS
-          </h2>
-          <p className="text-xl text-silver font-bold">
-            Quem faz o curso, conquista o certificado e entra pro time!
-          </p>
-        </div>
-
-        {/* Galeria dos alunos formados */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {[
-            ...[1,2,3,4,5,6,7,8].map((num) => `/curso${num}.png`)
-          ].map((src, idx) => (
-            <div key={src} className="overflow-hidden rounded-xl bg-gradient-to-b from-royal-blue/10 to-black shadow-lg">
-              <img 
-                src={src}
-                alt={`Aluno formado ${idx+1}`}
-                className="w-full h-96 object-cover object-center"
-              />
-            </div>
-          ))}
-        </div>
-
         {/* Impact Statement */}
         <div className="text-center mb-16 bg-gradient-to-r from-green-500/20 via-royal-blue/20 to-green-500/20 p-8 rounded-2xl border border-green-500/30">
           <div className="flex items-center justify-center space-x-4 mb-4">
