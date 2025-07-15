@@ -18,23 +18,11 @@ const Gallery = () => {
       label: 'MOICANO PIGMENTADO VERMELHO COM FREESTYLE',
       style: 'Moicano pigmentado vermelho, com desenhos freestyle na lateral.'
     },
-   
     {
       image: '/corte4.png',
       label: 'PLATINADO MASCULINO',
       style: 'Corte masculino platinado, com acabamento degradê e estilo marcante.'
     },
-    {
-      image: '/corte5.png', 
-      label: 'DESIGN AUTORAL',
-      style: 'Corte com design exclusivo, mostrando técnica e personalidade.'
-    },
-    {
-      image: '/corte6.png',
-      label: 'PLATINADO INFANTIL',
-      style: 'Corte platinado para crianças, estilo ousado e moderno.'
-    },
-
     {
       image: '/corte3.png',
       label: 'CORTE MOICANO DEGRADÊ MODERNO',
@@ -54,32 +42,49 @@ const Gallery = () => {
       image: '/corte10.jpeg',
       label: 'DEGRADÊ CLÁSSICO CURTO',
       style: 'Degradê clássico com risquinho na lateral.'
+    }
+  ];
+
+  const graduates = [
+    {
+      image: '/curso1.png',
+      label: 'FORMADO 1',
+      style: 'Aluno formado com técnica avançada.'
     },
     {
-      image: '/corte11.jpeg',
-      label: 'DESENHO ARTÍSTICO',
-      style: 'Corte com desenho freestyle, cheio de personalidade.'
+      image: '/curso2.png',
+      label: 'FORMADO 2',
+      style: 'Aluno formado com domínio completo.'
     },
     {
-      image: '/corte12.jpeg',
-      label: 'CORTE COLORIDO COM FREESTYLE',
-      style: ' '
+      image: '/curso3.png',
+      label: 'FORMADO 3',
+      style: 'Aluno formado com excelência.'
     },
     {
-      image: '/corte13.jpeg',
-      label: 'PLATINADO CURTO',
-      style: 'Platinado curto daquele naipe, moderno e prático.'
-    },
-    
-    {
-      image: '/corte15.jpeg',
-      label: 'PLATINADO DE CRIA ESPETADO',
-      style: 'Platinado espetado com muito estilo, corte de cria.'
+      image: '/curso4.png',
+      label: 'FORMADO 4',
+      style: 'Aluno formado com qualidade superior.'
     },
     {
-      image: '/corte16.jpeg',
-      label: 'PLATINADO DA MELHOR FORMA',
-      style: 'Platinado com acabamento de alto padrão, visual marcante.'
+      image: '/curso5.png',
+      label: 'FORMADO 5',
+      style: 'Aluno formado com destaque.'
+    },
+    {
+      image: '/curso6.png',
+      label: 'FORMADO 6',
+      style: 'Aluno formado com sucesso.'
+    },
+    {
+      image: '/curso7.png',
+      label: 'FORMADO 7',
+      style: 'Aluno formado com maestria.'
+    },
+    {
+      image: '/curso8.png',
+      label: 'FORMADO 8',
+      style: 'Aluno formado com profissionalismo.'
     }
   ];
 
@@ -100,14 +105,14 @@ const Gallery = () => {
           </p>
           
           <div className="flex items-center justify-center space-x-2 text-white/80">
-                            <Instagram className="w-5 h-5" />
-                <span>@coruja.corte - Siga para ver mais</span>
+            <Instagram className="w-5 h-5" />
+            <span>@coruja.corte - Siga para ver mais</span>
           </div>
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {cuts.slice(0, 8).map((cut, index) => (
+        {/* Gallery Grid - 2x4 Layout */}
+        <div className="grid grid-cols-2 gap-4 mb-16">
+          {cuts.map((cut, index) => (
             <div 
               key={cut.label}
               className="group relative overflow-hidden rounded-xl bg-gradient-to-b from-transparent to-black cursor-pointer"
@@ -123,19 +128,72 @@ const Gallery = () => {
               
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <Star className="w-4 h-4 text-royal-blue" />
-                    <Star className="w-4 h-4 text-royal-blue" />
-                    <Star className="w-4 h-4 text-royal-blue" />
-                    <Star className="w-4 h-4 text-royal-blue" />
-                    <Star className="w-4 h-4 text-royal-blue" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <div className="flex items-center space-x-1 mb-2">
+                    <Star className="w-3 h-3 text-royal-blue" />
+                    <Star className="w-3 h-3 text-royal-blue" />
+                    <Star className="w-3 h-3 text-royal-blue" />
+                    <Star className="w-3 h-3 text-royal-blue" />
+                    <Star className="w-3 h-3 text-royal-blue" />
                   </div>
-                  <h3 className="font-display text-xl font-black text-white mb-1">
+                  <h3 className="font-display text-lg font-black text-white mb-1">
                     {cut.label}
                   </h3>
-                  <p className="text-silver text-sm">
+                  <p className="text-silver text-xs">
                     {cut.style}
+                  </p>
+                </div>
+              </div>
+
+              {/* Metallic border effect */}
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-silver/50 rounded-xl transition-all duration-300"></div>
+            </div>
+          ))}
+        </div>
+
+        {/* Galeria de Formados Section */}
+        <div className="text-center mb-16">
+          <h2 className="font-display text-4xl md:text-6xl font-black text-white mb-6">
+            GALERIA DE
+            <br />
+            <span className="text-royal-blue">FORMADOS</span>
+          </h2>
+          <p className="text-xl text-silver font-bold mb-8">
+            NOSSOS ALUNOS QUE CONQUISTARAM O SUCESSO
+          </p>
+        </div>
+
+        {/* Formados Grid - 2x4 Layout */}
+        <div className="grid grid-cols-2 gap-4 mb-16">
+          {graduates.map((graduate, index) => (
+            <div 
+              key={graduate.label}
+              className="group relative overflow-hidden rounded-xl bg-gradient-to-b from-transparent to-black cursor-pointer"
+              style={{animationDelay: `${index * 0.1}s`}}
+            >
+              <div className="aspect-square overflow-hidden">
+                <img 
+                  src={graduate.image}
+                  alt={`Formado ${graduate.label}`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <div className="flex items-center space-x-1 mb-2">
+                    <Star className="w-3 h-3 text-royal-blue" />
+                    <Star className="w-3 h-3 text-royal-blue" />
+                    <Star className="w-3 h-3 text-royal-blue" />
+                    <Star className="w-3 h-3 text-royal-blue" />
+                    <Star className="w-3 h-3 text-royal-blue" />
+                  </div>
+                  <h3 className="font-display text-lg font-black text-white mb-1">
+                    {graduate.label}
+                  </h3>
+                  <p className="text-silver text-xs">
+                    {graduate.style}
                   </p>
                 </div>
               </div>

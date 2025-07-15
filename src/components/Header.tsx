@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-[9999] transition-all duration-300 ${
         isScrolled 
           ? 'bg-black/95 backdrop-blur-sm shadow-lg' 
           : 'bg-transparent'
@@ -72,13 +72,13 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-black/95 backdrop-blur-sm absolute top-full left-0 w-full py-4">
+        {isMenuOpen && isScrolled && (
+          <div className="md:hidden bg-black/98 backdrop-blur-md absolute top-full left-0 w-full py-4 border-t border-white/10 shadow-2xl">
             {navItems.map((item) => (
               <button
                 key={item.label}
                 onClick={() => handleNavClick(item.href)}
-                className="block w-full text-left px-4 py-3 text-white font-bold hover:text-royal-blue hover:bg-white/5 transition-all duration-300"
+                className="block w-full text-left px-4 py-3 text-white font-bold hover:text-royal-blue hover:bg-white/10 transition-all duration-300"
               >
                 {item.label}
               </button>
