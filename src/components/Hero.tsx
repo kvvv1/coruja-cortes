@@ -15,29 +15,17 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden">
-      {/* Background with texture */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-graphite to-royal-blue/30"></div>
-      <div className="absolute inset-0 bg-brick-texture opacity-10"></div>
-      
-      {/* Hero Image */}
-      <div className="absolute inset-0">
-        <img 
-          src="https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="Barbeiro profissional"
-          className="w-full h-full object-cover opacity-30"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 flex items-center min-h-screen">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-4xl">
-            {/* Logo with animation */}
-            {/* Removido conforme solicitado */}
-
-            {/* Main Headline */}
+    <section
+      id="home"
+      className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-center bg-cover bg-no-repeat"
+      style={{ backgroundImage: "url('/herosection1.png')" }}
+    >
+      {/* Overlay para contraste */}
+      <div className="absolute inset-0 bg-black/60 z-0" />
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between min-h-screen w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Texto à esquerda */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-start text-left">
+          <div className="max-w-2xl">
             <div className="mb-8 animate-slide-up">
               <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black text-white leading-tight mb-4">
                 DO CORTE
@@ -50,8 +38,6 @@ const Hero = () => {
                 <span className="text-white">OU EMPREENDENDO.</span>
               </h2>
             </div>
-
-            {/* Subtitle */}
             <div className="mb-12 animate-fade-in" style={{animationDelay: '0.3s'}}>
               <p className="text-white/90 text-lg md:text-xl max-w-3xl leading-relaxed">
                 Seja pra fazer um corte de qualidade ou 
@@ -59,9 +45,7 @@ const Hero = () => {
                 o Coruja Cortes é o ponto certo.
               </p>
             </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col gap-3 items-center w-full animate-slide-up sm:flex-row sm:justify-center sm:gap-5 md:gap-6 lg:gap-8" style={{animationDelay: '0.6s'}}>
+            <div className="flex flex-col gap-3 items-center w-full animate-slide-up sm:flex-row sm:justify-start sm:gap-5 md:gap-6 lg:gap-8 mb-8" style={{animationDelay: '0.6s'}}>
               <button
                 onClick={() => handleCTAClick('cut')}
                 className="group bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-base md:text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-2xl w-full sm:w-auto min-w-[210px]"
@@ -97,12 +81,9 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        {/* Mascote removido, pois agora está no fundo */}
       </div>
-
-      {/* Transição suave para a próxima seção */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#2A2A2A] via-[#2A2A2A]/80 to-transparent"></div>
-
-
+      {/* Gradiente de transição para a próxima seção removido */}
     </section>
   );
 };
