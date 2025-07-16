@@ -18,13 +18,13 @@ const Contact = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-6xl font-black text-white mb-6">
+        <div className="text-center mb-10 xs:mb-12 sm:mb-16">
+          <h2 className="font-display text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-black text-white mb-4 xs:mb-6">
             AGENDAMENTO E
             <br />
             <span className="text-royal-blue">CONTATO</span>
           </h2>
-          <p className="text-xl text-silver font-bold">
+          <p className="text-base xs:text-lg md:text-xl text-silver font-bold">
             TÁ ESPERANDO O QUÊ? AQUI TEM CORTE, CURSO E CORRE PRA QUEM QUER.
           </p>
         </div>
@@ -33,10 +33,10 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             {/* WhatsApp Buttons */}
-            <div className="space-y-4">
+            <div className="space-y-3 xs:space-y-4">
               <button
                 onClick={() => handleWhatsApp('cut')}
-                className="w-full group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-between hover:scale-105"
+                className="w-full group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 xs:py-4 px-4 xs:px-6 rounded-xl text-base xs:text-lg transition-all duration-300 flex items-center justify-between hover:scale-105"
               >
                 <div className="flex items-center space-x-3">
                   <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
@@ -47,7 +47,7 @@ const Contact = () => {
 
               <button
                 onClick={() => handleWhatsApp('course')}
-                className="w-full group bg-gradient-to-r from-royal-blue to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-between hover:scale-105"
+                className="w-full group bg-gradient-to-r from-royal-blue to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold py-3 xs:py-4 px-4 xs:px-6 rounded-xl text-base xs:text-lg transition-all duration-300 flex items-center justify-between hover:scale-105"
               >
                 <div className="flex items-center space-x-3">
                   <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
@@ -146,7 +146,7 @@ const Contact = () => {
             Aqui tem corte, curso e corre pra quem quer.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
+          <div className="flex flex-col xs:flex-row gap-3 xs:gap-4 justify-center max-w-lg mx-auto">
             <button
               onClick={() => handleWhatsApp('cut')}
               className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105"

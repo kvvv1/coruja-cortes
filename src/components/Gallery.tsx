@@ -94,8 +94,8 @@ const Gallery = () => {
       
       <div className="relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-6xl font-black text-white mb-6">
+        <div className="text-center mb-10 xs:mb-12 sm:mb-16">
+          <h2 className="font-display text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-black text-white mb-4 xs:mb-6">
             GALERIA DE
             <br />
             <span className="text-royal-blue">CORTES</span>
@@ -111,7 +111,7 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid - 2x4 Layout */}
-        <div className="grid grid-cols-2 gap-4 mb-16">
+        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-4 xs:gap-6 mb-10 xs:mb-16">
           {cuts.map((cut, index) => (
             <div 
               key={cut.label}
@@ -164,7 +164,7 @@ const Gallery = () => {
         </div>
 
         {/* Formados Grid - 2x4 Layout */}
-        <div className="grid grid-cols-2 gap-4 mb-16">
+        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-4 xs:gap-6 mb-10 xs:mb-16">
           {graduates.map((graduate, index) => (
             <div 
               key={graduate.label}

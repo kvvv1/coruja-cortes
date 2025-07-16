@@ -40,10 +40,10 @@ const Header = () => {
         <div className={`flex justify-between items-center ${isScrolled ? 'py-1' : 'py-4'}`}>
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-28 h-28 flex items-center justify-center">
-              <img src="/logo-coruja.png" alt="Logo Coruja Cortes" className="w-28 h-28 object-contain" />
+            <div className="w-20 h-20 md:w-28 md:h-28 flex items-center justify-center">
+              <img src="/logo-coruja.png" alt="Logo Coruja Cortes" className="w-20 h-20 md:w-28 md:h-28 object-contain" />
             </div>
-            <span className="text-white font-display text-3xl md:text-4xl font-black tracking-wider" style={{fontFamily: 'Impact, Arial Black, sans-serif', textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
+            <span className="text-white font-display text-xl xs:text-2xl sm:text-3xl md:text-4xl font-black tracking-wider" style={{fontFamily: 'Impact, Arial Black, sans-serif', textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
               CORUJA CORTES
             </span>
           </div>
@@ -57,7 +57,7 @@ const Header = () => {
                 className="text-white font-bold hover:text-royal-blue transition-colors duration-300 relative group"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-royal-blue transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-detail-red transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
           </nav>

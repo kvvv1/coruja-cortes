@@ -44,18 +44,18 @@ const Course = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-6xl font-black text-white mb-6" style={{letterSpacing: '0.03em'}}>
+          <h2 className="font-display text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-black text-white mb-4 xs:mb-6" style={{letterSpacing: '0.03em'}}>
             CURSO DE BARBEIRO
             <br />
             <span className="text-royal-blue">PROFISSIONAL</span>
           </h2>
-          <p className="text-xl md:text-2xl text-silver font-bold max-w-4xl mx-auto">
+          <p className="text-base xs:text-lg md:text-2xl text-silver font-bold max-w-4xl mx-auto">
             DO INICIANTE AO BARBEIRO PROFISSIONAL — NA PRÁTICA, NO CORRE.
           </p>
         </div>
 
         {/* Course Highlights */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 xs:gap-6 mb-10 xs:mb-16">
           {highlights.map((highlight) => (
             <div 
               key={highlight.title}

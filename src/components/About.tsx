@@ -9,18 +9,18 @@ const About = () => {
       
       <div className="absolute inset-0 bg-concrete opacity-5"></div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-2 xs:px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="font-display text-4xl md:text-5xl font-black text-white mb-6" style={{letterSpacing: '0.03em'}}>
+              <h2 className="font-display text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6" style={{letterSpacing: '0.03em'}}>
                 SOBRE O
                 <br />
                 <span className="text-royal-blue">CORUJA CORTES</span>
               </h2>
               
-              <div className="space-y-6 text-lg text-white/90 leading-relaxed">
+              <div className="space-y-4 xs:space-y-6 text-base xs:text-lg text-white/90 leading-relaxed">
                 <p className="text-2xl font-bold text-silver">
                   "BARBEARIA É ATITUDE.
                   <br />
@@ -55,11 +55,11 @@ const About = () => {
 
           {/* Image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden">
+            <div className="relative rounded-2xl overflow-hidden w-full max-w-md mx-auto lg:mx-0">
               <img 
                 src="/corte16.jpeg"
                 alt="Corte de cabelo profissional Coruja Cortes"
-                className="w-full h-96 object-cover"
+                className="w-full h-60 xs:h-72 sm:h-80 md:h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-royal-blue/50 to-transparent"></div>
             </div>
