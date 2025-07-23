@@ -39,16 +39,19 @@ const Results = () => {
         </div>
 
         {/* Galeria dos alunos formados */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-2 grid-rows-4 gap-4 mb-16 max-w-2xl mx-auto">
           {[
-            ...[1,2,3,4,5,6,7,8].map((num) => `/curso${num}.png`)
+            '/curso9.png', '/curso2.png', '/curso3.png', '/curso4.png', '/curso10.jpeg', '/curso12.jpeg', '/curso14.jpeg', '/curso8.png'
           ].map((src, idx) => (
-            <div key={src} className="overflow-hidden rounded-xl bg-gradient-to-b from-royal-blue/10 to-black shadow-lg">
+            <div key={src} className="relative overflow-hidden rounded-xl group shadow-lg w-full">
               <img 
                 src={src}
                 alt={`Aluno formado ${idx+1}`}
-                className="w-full h-96 object-cover object-center"
+                className="w-full aspect-square object-cover object-center transition-transform duration-300 group-hover:scale-110"
               />
+              <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                <h3 className="font-display text-xl font-bold text-white mb-2 text-center">Aluno formado {idx+1}</h3>
+              </div>
             </div>
           ))}
         </div>
