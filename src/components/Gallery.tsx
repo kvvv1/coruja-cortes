@@ -18,23 +18,6 @@ const Gallery = () => {
       label: 'MOICANO PIGMENTADO VERMELHO COM FREESTYLE',
       style: 'Moicano pigmentado vermelho, com desenhos freestyle na lateral.'
     },
-   
-    {
-      image: '/corte4.png',
-      label: 'PLATINADO MASCULINO',
-      style: 'Corte masculino platinado, com acabamento degradê e estilo marcante.'
-    },
-    {
-      image: '/corte5.png', 
-      label: 'DESIGN AUTORAL',
-      style: 'Corte com design exclusivo, mostrando técnica e personalidade.'
-    },
-    {
-      image: '/corte6.png',
-      label: 'PLATINADO INFANTIL',
-      style: 'Corte platinado para crianças, estilo ousado e moderno.'
-    },
-
     {
       image: '/corte3.png',
       label: 'CORTE MOICANO DEGRADÊ MODERNO',
@@ -55,22 +38,6 @@ const Gallery = () => {
       label: 'DEGRADÊ CLÁSSICO CURTO',
       style: 'Degradê clássico com risquinho na lateral.'
     },
-    {
-      image: '/corte11.jpeg',
-      label: 'DESENHO ARTÍSTICO',
-      style: 'Corte com desenho freestyle, cheio de personalidade.'
-    },
-    {
-      image: '/corte12.jpeg',
-      label: 'CORTE COLORIDO COM FREESTYLE',
-      style: ' '
-    },
-    {
-      image: '/corte13.jpeg',
-      label: 'PLATINADO CURTO',
-      style: 'Platinado curto daquele naipe, moderno e prático.'
-    },
-    
     {
       image: '/corte15.jpeg',
       label: 'PLATINADO DE CRIA ESPETADO',
@@ -106,42 +73,18 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {cuts.slice(0, 8).map((cut, index) => (
-            <div 
-              key={cut.label}
-              className="group relative overflow-hidden rounded-xl bg-gradient-to-b from-transparent to-black cursor-pointer"
-              style={{animationDelay: `${index * 0.1}s`}}
-            >
-              <div className="aspect-square overflow-hidden">
-                <img 
-                  src={cut.image}
-                  alt={`Corte ${cut.label}`}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+        <div className="grid grid-cols-2 grid-rows-4 gap-4 mb-16 max-w-2xl mx-auto">
+          {cuts.slice(0, 8).map((cut, idx) => (
+            <div key={cut.image} className="relative overflow-hidden rounded-xl group shadow-lg w-full">
+              <img 
+                src={cut.image}
+                alt={cut.label}
+                className="w-full aspect-square object-cover object-center transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                <h3 className="font-display text-xl font-bold text-white mb-2 text-center">{cut.label}</h3>
+                <p className="text-white/80 text-sm text-center">{cut.style}</p>
               </div>
-              
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <Star className="w-4 h-4 text-royal-blue" />
-                    <Star className="w-4 h-4 text-royal-blue" />
-                    <Star className="w-4 h-4 text-royal-blue" />
-                    <Star className="w-4 h-4 text-royal-blue" />
-                    <Star className="w-4 h-4 text-royal-blue" />
-                  </div>
-                  <h3 className="font-display text-xl font-black text-white mb-1">
-                    {cut.label}
-                  </h3>
-                  <p className="text-silver text-sm">
-                    {cut.style}
-                  </p>
-                </div>
-              </div>
-
-              {/* Metallic border effect */}
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-silver/50 rounded-xl transition-all duration-300"></div>
             </div>
           ))}
         </div>
