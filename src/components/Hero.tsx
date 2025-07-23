@@ -23,8 +23,8 @@ const Hero = () => {
       {/* Hero Image */}
       <div className="absolute inset-0">
         <img 
-          src="https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="Barbeiro profissional"
+          src="/corujones.png"
+          alt="Coruja Cortes capa"
           className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
