@@ -71,27 +71,19 @@ const Hero = () => {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
               <button
-                onClick={() => handleCTAClick('course')}
+                onClick={() => window.open('https://pay.kiwify.com.br/c0SGgdh', '_blank')}
                 className="group bg-white hover:bg-gray-100 text-blue-600 hover:text-blue-700 font-bold py-3 px-6 rounded-lg text-base md:text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 w-full sm:w-auto min-w-[210px]"
               >
                 <BookOpen className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                <span>FAZER CURSO</span>
+                <span>Curso Online</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
               <button
-                onClick={() => handleCTAClick('rifa')}
+                onClick={() => window.open('https://pay.kiwify.com.br/mgssaHU', '_blank')}
                 className="group bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-base md:text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-2xl w-full sm:w-auto min-w-[210px]"
               >
-                <Gift className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                <span>RIFA DO CORUJA</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </button>
-              <button
-                onClick={() => window.open('https://wa.me/5531999368220?text=Quero%20comprar%20roupas%20do%20Coruja!', '_blank')}
-                className="group bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 font-bold py-3 px-6 rounded-lg text-base md:text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105 w-full sm:w-auto min-w-[210px]"
-              >
-                <Shirt className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                <span>COMPRAR ROUPAS</span>
+                <BookOpen className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                <span>Curso presencial</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
             </div>
