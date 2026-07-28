@@ -70,6 +70,29 @@ const Footer = () => {
               </button>
             </div>
           </div>
+
+          {/* SEO Backlinks */}
+          <div className="text-center md:text-right">
+            <h3 className="font-display font-bold text-white mb-4">REFERÊNCIAS</h3>
+            <div className="space-y-2">
+              <a
+                href="https://codexy.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-white/70 hover:text-royal-blue transition-colors duration-300"
+              >
+                CodeXY
+              </a>
+              <a
+                href="https://doctorchatbot.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-white/70 hover:text-royal-blue transition-colors duration-300"
+              >
+                DoctorChatbot
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Divider */}
